@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="includes/main.JS"></script>
+    <script src="https://kit.fontawesome.com/3033c0f96b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+</head>
+<body>      
+        <header>
+          <a href="index.html">
+            <div id="logo"></div>
+         </a>
+          <ul>
+                <li>
+                    <a href="#">
+                    <img src="images/liat.png" alt="Liat Cohen"> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="images/bell.png" alt="Notifications"> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="images/mail.png" alt="messages"> 
+                    </a> 
+                </li>
+                <li>
+                    <a href="index.html">
+                    <img src="images/homeG.png" alt="Home page">
+                    </a>
+                </li>  
+                </ul>
+
+                <nav class="sidenav">
+                  <ul>
+                      <li><a href="page4"><img src="images/plus1.png" alt=""></a></li>
+                      <li><a href="page2.html"><img src="images/album1.png" alt=""></a></li>
+                      <li><a href="#"><img src="images/graphic.png" alt=""></a></li>
+                      <li><a href="#"><img src="images/cog.png" alt=""></a></li>
+                      <li><a href="#"><img src="images/logout.png" alt=""></a></li>
+  
+                  </ul>
+                  
+                </nav>
+
+        </header>
+        <main>
+            <div id="layout-wrapper">
+        <h1>Create New Campaign</h1>
+        <div class="steps">
+            <div>
+                <i class="fas fa-cog"></i>
+                General Settings
+            </div>
+            <div>
+                <i class="fas fa-address-card"></i>
+                Advertise Files
+            </div>
+            <div>
+                <i class="fas fa-image"></i>
+                Preview
+            </div>
+        </div>
+        <form id=stepOneForm>
+            <div class="step__container">
+                <div class="general-settings__step" id="generalSettings" >
+                     <div class="form-group form-group__size">
+                        <label for="campaignName">Campaign Name</label>
+                        <input class="form-control" id="campaignName" type="text" required/>
+                    </div>
+                     <div class="general-settings__step-select">
+                        <label>Campaign Duration</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="campaignDur" id="oneMonth" value="One Month" checked="">
+                            <label class="form-check-label"  for="oneMonth">
+                                One Month
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="campaignDur" id="twoMonths" value="Two Months">
+                            <label class="form-check-label" for="twoMonths">
+                                Two Months
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="campaignDur" id="threeMonths" value="Three Months">
+                            <label class="form-check-label" for="threeMonths">
+                                Three Months
+                            </label>
+                        </div>
+                    </div>
+                     <div class="general-settings__step-select">
+                        <label>Main Category</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mainCat" id="foodCat" value="Food" checked="">
+                            <label class="form-check-label" for="foodCat">
+                                Food
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mainCat" id="Beauty" value="Beauty, Care And Health">
+                            <label class="form-check-label" for="Beauty">
+                                Beauty, Care And Health
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mainCat" id="fashionCat" value="Fashion">
+                            <label class="form-check-label" for="fashionCat">
+                                Fashion
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mainCat" id="homeProducts" value="Home Products">
+                            <label class="form-check-label" for="homeProducts">
+                                Home Products
+                            </label>
+                        </div>
+                    </div>
+                     <div class="general-settings__step-select">
+                        <label>Main Areas</label>
+                         <div class="custom-control custom-checkbox">
+                             <input type="checkbox" class="custom-control-input" id="telAvivArea" value="Tel Aviv" checked>
+                             <label class="custom-control-label" for="telAvivArea">Tel Aviv</label>
+                         </div>
+                         <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="jerusalem" value="Jerusalem">
+                             <label class="custom-control-label" for="jerusalem">Jerusalem</label>
+                         </div>
+                         <div class="custom-control custom-checkbox">
+                             <input type="checkbox" class="custom-control-input" id="roshAyan" value="Rosh Haayn">
+                             <label class="custom-control-label" for="roshAyan">Rosh Ayan</label>
+                         </div>
+                    </div>
+                     <div class="form-group form-group__size">
+                        <label for="advertiseFiles">Advertise Files</label>
+                        <select class="custom-select" id="advertiseFiles">
+                            <option selected>Choose...</option>
+                            <option value="1" selected>One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="next-step">
+                        <button class='btn btn-primary' type='submit' >Continue </button>
+                    </div>
+    
+                </div>
+                <br/>
+            </div>
+            <div class="step__container">
+                <div  id="advertiseFilesContainer">
+                   <div  id="advertiseFilesForm">
+                   </div>
+                        <div class="next-step">
+                            <button class='btn btn-primary' type='submit' >Continue </button>
+                        </div>
+                </div>
+            <br/>
+        </div>
+        </form>
+        <div class="step__container">
+            <div class="general-settings__step" id="preview">
+                <div class="video"><img src="images/video.png" alt=""></div>
+                <div class="next-step">
+                    <button class='btn btn-primary' >Submit</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="card-group">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>Contact Us</b></h5>
+                    <p class="card-text">03-5741111 <br>onway@gmail.com</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>Help</b></h5>
+                    <p class="card-text">Site Usage Guidelines<br>Terms<br>Technical assistance</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><b>Info</b></h5>
+                    <p class="card-text">Useful information<br>Map of available vehicles<br>Sample campaigns</p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+    </div> 
+</main>
+</body>
+</html>
